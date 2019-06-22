@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:orientation="vertical" android:id="@+id/main_layout"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="fill_parent"
+                                             android:weightSum="4">
+    <TextView android:textSize="30sp" android:id="@+id/ques3" android:visibility="visible"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Everyday 5 Free Answers" app:layout_constraintBottom_toTopOf="@+id/comment"
+              app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.142"
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/gps_popup"
+              app:layout_constraintVertical_bias="0.047"/>
+    <TextView android:textSize="30sp" android:id="@+id/ques2" android:visibility="visible"
+              android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 Answers Remain"
+              app:layout_constraintBottom_toTopOf="@+id/comment" app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.073" app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/gps_popup" app:layout_constraintVertical_bias="1.0"/>
+    <FrameLayout android:id="@+id/gps_popup" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp" android:layout_alignParentTop="true"
+                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView android:textSize="@dimen/_20ssp" android:id="@+id/status" android:visibility="invisible"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.065" app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.029"/>
+    <Button android:id="@+id/sign_out_button" android:visibility="invisible" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="sıgn out" android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.929" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.887"/>
+    <com.google.android.gms.common.SignInButton android:id="@+id/sign_in_button" android:visibility="visible"
+                                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:layout_marginRight="16dp" android:layout_centerInParent="true"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintHorizontal_bias="0.901"
+                                                app:layout_constraintRight_toRightOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintVertical_bias="0.883"/>
+    <Button android:textSize="@dimen/_14ssp" android:textColor="#38E4FF" android:id="@+id/PlayMeee"
+            android:background="@drawable/buttonbcg" android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_50sdp" android:text="Achievements" android:onClick="achieve"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087" app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.906"/>
+    <Button android:textSize="@dimen/_13ssp" android:textColor="#38E4FF" android:id="@+id/ade"
+            android:background="@drawable/buttonbcg" android:visibility="visible" android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_50sdp" android:text="Watch ad for Get 5 Answers" android:onClick="adwer"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.751"/>
+    <Button android:textSize="@dimen/_9ssp" android:textColor="#38E4FF" android:id="@+id/ade2"
+            android:background="@drawable/buttonbcg" android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp" android:text="OK" android:onClick="controlbut"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.42"/>
+    <Button android:textSize="@dimen/_13ssp" android:textColor="#38E4FF" android:id="@+id/comment"
+            android:background="@drawable/buttonbcg" android:paddingLeft="5dp" android:paddingRight="5dp"
+            android:visibility="visible" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_45sdp"
+            android:text="Give 5 Stars :)" android:onClick="commint" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.621"/>
+    <TextView android:textSize="60sp" android:textStyle="bold|italic" android:id="@+id/Ques"
+              android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 + 2"
+              android:textAllCaps="false" app:layout_constraintBottom_toTopOf="@+id/comment"
+              app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.501"
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/gps_popup"
+              app:layout_constraintVertical_bias="0.423"/>
+    <EditText android:id="@+id/editText" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:hint="Answer" android:ems="10" android:inputType="number"
+              app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.502" app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.423"/>
+</android.support.constraint.ConstraintLayout>
