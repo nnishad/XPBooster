@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             android:orientation="vertical" android:id="@+id/main_layout"
+                                             xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:id="@+id/main_layout"
                                              android:layout_width="fill_parent"
                                              android:layout_height="fill_parent"
                                              android:weightSum="4">
@@ -65,8 +65,9 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.621"/>
     <TextView android:textSize="60sp" android:textStyle="bold|italic" android:id="@+id/Ques"
-              android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 + 2"
+              android:layout_width="219dp" android:layout_height="82dp" android:text="2 + 2"
               android:textAllCaps="false" app:layout_constraintBottom_toTopOf="@+id/comment"
+              android:gravity="center"
               app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.501"
               app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/gps_popup"
               app:layout_constraintVertical_bias="0.423"/>
